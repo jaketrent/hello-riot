@@ -3,9 +3,14 @@
     <title>Hello Riot.</title>
   </head>
   <body>
-    <sample></sample>
-    <script type="riot/tag" src="/sample.tag.html"></script>
+
+    <!-- <sample></sample>
+    <script type="riot/tag" src="/sample.tag"></script> -->
+
+    <todo></todo>
+    <script type="riot/tag" src="/todo.tag"></script>
+
     <script src="/node_modules/riot/riot+compiler.js"></script>
-    <script>riot.mount('sample')</script>
+    <script>riot.mount('todo', { title: 'Stuff Todo', items: [] })</script>
   </body>
 </html>
