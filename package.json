@@ -4,6 +4,8 @@
   "description": "Play with riot.js",
   "main": "index.js",
   "scripts": {
+    "build": "riot src dist",
+    "build:watch": "npm run build -- -w",
     "start": "http-server ."
   },
   "keywords": [],

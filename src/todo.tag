@@ -1,5 +1,5 @@
 <todo>
-  <h3>{ opts.title }</h3>
+  <h3>{ opts.title || 'Todos' }</h3>
 
   <ul>
     <li each={ items }>
@@ -18,7 +18,7 @@
   <script>
     this.disabled = true
 
-    this.items = opts.items
+    this.items = opts.items || []
 
     edit(e) {
       this.text = e.target.value
